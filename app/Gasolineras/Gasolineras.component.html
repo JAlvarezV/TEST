@@ -1,0 +1,36 @@
+<hr>
+<table class="table table-striped table-dark text-center" >
+    
+    <tr>
+        <th scope="col">Indice</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Calle</th>
+    </tr>
+    
+    <tr scope="row" *ngFor="let Gasolinera of Gasolineras1; let i = index">
+        <td>{{i}}</td>
+        <td>{{Gasolinera.nombre}}</td>
+        <td>{{Gasolinera.calle}}</td>
+    </tr>
+
+</table>
+
+
+<h3 *ngIf="parametro">
+Parametro de entrada es {{parametro}}
+</h3>
+
+
+<h3 *ngIf="parametro2">
+Parametro de entrada es {{parametro2}}
+</h3>
+
+
+<h3 *ngIf="!parametro">
+<button (click)="LoginLink()">Ir al Login</button>
+</h3>
+
+
+<h3 *ngIf="!parametro">
+<button (click)="ContactoLink()">Ir a Contacto</button>
+</h3>

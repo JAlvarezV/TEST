@@ -1,0 +1,53 @@
+<div style="height: 210px"></div>
+ 
+<h2 class="letra-blanca" *ngIf="inicio == true ">
+    Hola {{usuarioRecogido}}
+    <hr>
+    
+<!--    
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary">Repostaje</button>
+      <button type="button" class="btn btn-secondary">Viajes</button>
+      <button type="button" class="btn btn-secondary" [routerLink]="['/Gasolinera']">Gasolineras</button><div class="col"></div>
+      <button (click)="cerrarSesion()"type="button" class="btn btn-secondary">Cerrar Sesión</button>
+    </div>
+    
+    -->
+</h2>
+ 
+ 
+ <h2 class="letra-blanca" *ngIf="inicio == false ">
+    Usuario no identificado
+</h2>
+ 
+ <div *ngIf="x != 5">
+ <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Usuario:</span>
+  </div>
+  <input [(ngModel)]="usuarioRecogido" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  
+  <p>{{usuarioRecogido}}</p>
+  
+</div>
+
+
+<div style="height: 10px"></div>
+
+
+ <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Password:</span>
+  </div>
+  <input [(ngModel)]="passwordRecogido" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  
+    <p>{{passwordRecogido}}</p>
+</div>
+
+<div style="height: 15px"></div>
+
+
+<button (click)="inicioSesion()" type="button" class="btn btn-primary center form-control">Inicio sesion</button>
+
+
+</div>

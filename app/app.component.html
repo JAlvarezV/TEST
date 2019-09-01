@@ -1,0 +1,54 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+	<div class="text-center">
+		<h1 class="letra-blanca">Bienvenido</h1>
+		
+	</div>
+	<div style="height: 10px"></div>
+
+
+
+
+<div class="container-fluid">
+
+<div class="row align-middle">
+
+            <div class="col"></div>
+
+            
+                   <div class=col-10 align-middle>
+            
+                          
+                        <div class="btn-group" role="group" aria-label="Basic example">
+      <button [routerLink]="['/Repostaje']" [routerLinkActive]="['activado']" type="button" class="btn btn-secondary">Repostaje</button>
+      <button [routerLink]="['/Contacto']" type="button" class="btn btn-secondary" [routerLinkActive]="['activado']">Contacto</button>
+      <button type="button" class="btn btn-secondary" [routerLink]="['/Gasolinera']" [routerLinkActive]="['activado']">Gasolineras</button>
+      <button type="button" class="btn btn-secondary" [routerLink]="['/Pipes']" [routerLinkActive]="['activado']">Pipes</button>
+      
+      <div class="col"></div>
+      <button [routerLink]="['/Login']"type="button" class="btn btn-secondary" [routerLinkActive]="['activado']">Cerrar Sesión</button>
+      
+      
+    </div>                                              
+                    <router-outlet></router-outlet>       
+                    
+                     
+           
+                 <!--  <Login></Login>
+                   
+                   <hr>
+                   
+                   <Gasolinera1></Gasolinera1>
+           -->           
+           
+                    </div>
+            
+            <div class="col"></div>
+</div>
+  
+</div>
+
+
+
+
+
